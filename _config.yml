@@ -1,0 +1,17 @@
+# Build settings
+
+url: http://samflick.me
+baseurl: /samflick/
+
+markdown: kramdown
+permalink: pretty
+
+port: 3000
+
+sass:
+  sass_dir: assets/css
+  style: :nested
+
+collections:
+  portfolio:
+  categories:

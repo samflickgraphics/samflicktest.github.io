@@ -1,0 +1,28 @@
+<section class="recent-posts">
+
+  <div class="small-bar"></div>
+
+  <h3>Recent Posts</h3>
+
+  {% for posts in site.post limit:8 %}
+      <div class="col-sm-6 col-md-3 item">
+
+      <div class="image-wrapper">
+          <a href="/projects/{{ post.link }}">
+            <img src="{{ post_item.src }}" alt="{{ post.alt }}" class="img-responsive" srcset="{{ post.retina }}">
+            <div class="image-hover">
+              <div class="clearfix">
+                <div class="project-meta">
+                  <span>{{ post.title }}</span>
+                  <em>{{ post.category }}</em>
+                </div>
+              </div>
+            </div>
+          </a>
+
+      </div>
+
+    </div>
+  {% endfor %}
+
+</section>

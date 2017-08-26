@@ -1,0 +1,47 @@
+.contact
+  margin-bottom: 0
+  h2
+    margin: 90px 0 30px
+  p
+    max-width: 630px
+    margin-bottom: 90px
+
+  input,textarea
+    background: transparent
+    border: 3px solid $primary-color
+    color: $text-color
+    margin-bottom: 30px
+    padding: 15px
+    width: 100%
+    position: relative
+  span
+    position: absolute
+    top: 15px
+    left: 30px
+    transition: all 200ms ease-in-out
+  textarea
+    height: 300px
+  input[type="submit"]
+    border: 6px solid $accent-color
+    padding: 15px 30px
+    margin: 0
+    color: $accent-color
+    text-transform: uppercase
+    transition: all 200ms ease-in-out
+    &:hover
+      background: $accent-color
+      color: $bg-color
+
+.is-clicked
+  transform: translateY(-15px)
+  color: lighten($text-color, 60%)
+
+.contact-info
+  margin-bottom: 90px
+  .contact-items
+    margin: 90px 0 30px
+  .contact-item
+    width: 100%
+    margin-bottom: 24px
+  .social li
+    margin: 0 20px 0 0

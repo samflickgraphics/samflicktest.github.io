@@ -1,0 +1,85 @@
+.header
+  background: transparent
+  height: auto
+  padding: 0
+  margin: 0
+  transition: all 200ms ease-in-out
+
+.header-content
+  padding: 20px 15px
+
+.logo img
+  max-width: 65px
+
+.header-nav,.mobile-nav
+  float: right
+  ul
+    list-style: none
+    li
+      display: inline-block
+      padding-left: 20px
+      a
+        color: $text-color
+        transition: all 200ms
+        &:hover
+          background: $accent-color
+          color: $bg-color
+          text-decoration: none
+.mobile-nav
+  display: none
+  margin-top: 30px
+  width: 100%
+  padding-bottom: 15px
+  transform: translateY(-100%)
+  transition: all 2s ease-in-out
+  ul
+    text-align: center
+    padding-left: 0
+    padding-right: 40px
+
+.mobile-nav.is-showing
+  display: block
+  transform: translateY(0%)
+
+.is-showing
+  background: white
+
+
+@media (max-width: 992px)
+  .header-nav
+    display: none
+  .header-nav-toggle
+    width: 30px
+    height: 30px
+    float: right
+    cursor: pointer
+    span,
+    span:before,
+    span::after
+      content: ""
+      display: block
+      height: 2px
+      background: $text-color
+      position: relative
+      top: 15px
+      transition: all 300ms ease-in-out
+
+    span:before
+      top: -10px
+      height: 1px
+    span:after
+      top: 10px
+      height: 3px
+
+    &.is-showing span
+      background: transparent
+    &.is-showing span:before,
+    &.is-showing span:after
+      transform-origin: center
+      transform: rotate(45deg)
+      top: 0px
+    &.is-showing span:before
+      height: 2px
+    &.is-showing span:after
+      transform: rotate(-45deg)
+      height: 1px

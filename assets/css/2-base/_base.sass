@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans')
+@import url('https://fonts.googleapis.com/css?family=Space+Mono')
+
+//	Typography
+
+.huge, .large, .bigger, .big,
+h1, h2, h3, h4, h5, h6
+  color: $text-color
+  font-weight: bold
+  font-family: $header-font
+
+.huge, h1
+  font-size: 84px
+  line-height: 1.05
+
+.large, h2
+  font-size: 56px
+  line-height: 1.14
+
+.bigger, h3
+  font-size: 36px
+  line-height: 1.38
+
+.big, h4
+  font-size: 24px
+  line-height: 1.38
+
+.small, small
+  font-size: 10px
+  line-height: 1.2
+
+p
+  margin: 0 0 20px 0
+
+em
+  font-style: italic
+
+strong
+  font-weight: bold
+
+hr
+  border: solid #ddd
+  border-width: 1px 0 0
+  clear: both
+  margin: 10px 0 30px
+  height: 0
+
+
+
+// Links
+
+a
+  color: $link-color
+  text-decoration: none
+  outline: 0
+
+a:hover, a:focus
+  color: lighten($link-color, 20%)
+
+
+
+// Selection colors (easy to forget)
+
+::selection
+  background: $selection-color
+
+::-moz-selection
+  background: $selection-color
+
+img::selection
+  background: transparent
+
+img::-moz-selection
+  background: transparent
+
+body
+  -webkit-tap-highlight-color: $selection-color
+
+
+
+// Basic Styles
+
+body
+  background: $bg-color
+  font-size: 16px
+  line-height: 1.6
+  font-family: $body-font
+  color: $text-color
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
+
+.active
+  border-bottom: 2px solid $accent-color
+
+.color
+  color: $accent-color
+
+.bar
+  width: 65px
+  border: solid 2px $accent-color
+
+.padding
+  padding: 20vh 0
+
+.no-padding
+  padding: 0
+
+.head
+  font-family: $header-font
+
+.body
+  font-family: $body-font
+
+img
+  width: 100%
+
+video
+  width: 100%
+
+.wrapper
+  overflow: hidden
+
+
+//Position
+
+.left
+  float: left
+
+.right
+  float: right
+
+.center
+  text-align: center
+  margin: 0 auto

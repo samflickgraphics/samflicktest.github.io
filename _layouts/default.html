@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Sam Flick - Graphic Designer, Digital Artist</title>
+    <meta name="Description" content="Graphic Designer, and Digital Artist living about 10.5 miles away from Louisville, Kentucky">
+
+    <link rel="icon" href="/assets/img/fav.png" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="/assets/css/main.css" rel="stylesheet">
+
+    <!-- modernizr -->
+    <script src="/assets/js/modernizr.js"></script>
+
+    {% include analytics.html %}
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+    {% include preloader.html %}
+
+    {% include header.html %}
+
+        {{ content }}
+
+    {% include footer.html %}
+
+    <!-- back to top -->
+    <a href="#0" class="cd-top"><img src="/assets/img/icons/arrow-up.svg"></a>
+    <!-- end back to top -->
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <!--  plugins -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/isotope.pkgd.min.js"></script>
+    <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- functions -->
+    <script src="/assets/js/functions.js"></script>
