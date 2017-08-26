@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------
     Theme Name: Kraft
-    Theme URI: http://demo.caliberthemes.com/html/kraft/demo.html 
+    Theme URI: http://demo.caliberthemes.com/html/kraft/demo.html
     Description: Minimal Portfolio Template
     Author: CaliberThemes
     Author URI: https://themeforest.net/user/caliberthemes
@@ -10,10 +10,10 @@
 /*-----------------------------------------------------------
     1  Basic
     2  Typography
-    3  Helper 
+    3  Helper
     4  Header
     5  Contents
-    6  Carousel  
+    6  Carousel
     7  Button
     8  Portfolio
     9  Project Single
@@ -23,11 +23,11 @@
     13 Blog Single
     14 Comments
     15 Footer
-    16 Responsive 
+    16 Responsive
 -------------------------------------------------------------*/
 
 /*-----------------------------------------------------------
-    Basic 
+    Basic
 -------------------------------------------------------------*/
 dl, dt, dd, ol, ul, li {
 	margin: 0;
@@ -75,7 +75,7 @@ h1,h2,h3,h4,h5,h6 {
 :focus { outline: none !important; }
 
 /*-----------------------------------------------------------
-    Typography 
+    Typography
 -------------------------------------------------------------*/
 body {
     font-family: 'Roboto', sans-serif;
@@ -136,7 +136,7 @@ blockquote {
     background: #f8f8f8
 }
 /*-----------------------------------------------------------
-    Helper Classes 
+    Helper Classes
 -------------------------------------------------------------*/
 // Paddings
 .no-padding-left {
@@ -349,7 +349,7 @@ blockquote {
                             -moz-transform: translateY(-8px) rotateZ(45deg);
                             -ms-transform: translateY(-8px) rotateZ(45deg);
                             -o-transform: translateY(-8px) rotateZ(45deg);
-                            transform: translateY(-8px) rotateZ(45deg);    
+                            transform: translateY(-8px) rotateZ(45deg);
                         }
                     }
                 }
@@ -443,7 +443,7 @@ blockquote {
 }
 
 /*-----------------------------------------------------------
-    Contents 
+    Contents
 -------------------------------------------------------------*/
 .page-title {
     margin-top: 100px;
@@ -918,7 +918,7 @@ blockquote {
     letter-spacing: 1px;
 }
 .cbp-popup-lightbox .cbp-popup-next,.cbp-popup-lightbox .cbp-popup-prev,.cbp-popup-lightbox .cbp-popup-close {
-    background-image:url('images/cbp-sprite.png'); 
+    background-image:url('images/cbp-sprite.png');
 }
 // Title & Subtitle
 .cbp-l-grid-agency-title {
@@ -1040,7 +1040,7 @@ blockquote {
         box-shadow: none;
     }
 }
-textarea { 
+textarea {
     resize:none;
     height: 200px !important;
 }
@@ -1064,7 +1064,7 @@ textarea {
 }
 
 /*-----------------------------------------------------------
-    Contact & Address 
+    Contact & Address
 -------------------------------------------------------------*/
 .contact-form {
     margin-bottom: 50px;
@@ -1111,7 +1111,7 @@ textarea {
 .form-process {
     display: none;
     position: absolute;
-    z-index: 3; 
+    z-index: 3;
     width: 100%;
     height: 100%;
     background: url(images/preloader.gif) center center no-repeat rgba(255,255,255,0.7);
@@ -1147,6 +1147,33 @@ textarea {
         left: 0;
         height: 100%;
         width: 100%;
+    }
+}
+
+input[type="submit"] {
+    a {
+        font-size: 13px;
+        color:#2c2c2c;
+        border:1px solid #2c2c2c;
+        padding:8px 16px;
+        display: inline-block;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        transition: all .3s ease;
+        &:hover {
+            text-decoration: none;
+            background: #2c2c2c;
+            color:#fff;
+        }
+    }
+    &.solid{
+        a {
+            background: #2c2c2c;
+            color:#fff;
+            &:hover{
+                background: #3e3e3e;
+            }
+        }
     }
 }
 /*-----------------------------------------------------------
@@ -1418,7 +1445,7 @@ textarea {
     }
 }
 /*-----------------------------------------------------------
-    Footer 
+    Footer
 -------------------------------------------------------------*/
 #footer {
     padding:80px 0 40px 0;
@@ -1586,7 +1613,7 @@ textarea {
         margin-right: 0;
         float: none;
     }
-    // Contact Form 
+    // Contact Form
     .contact-form {
         & > div {
             &:not(.form-submit) {
@@ -1624,7 +1651,7 @@ textarea {
     .margin-top-50-xs {
         margin-top:50px !important;
     }
-    
+
     // Slider Single
     .portfolio-wrap #portfolio-slider.single-project .slider-project-details .sp-title {
         font-size: 22px;
@@ -1640,9 +1667,9 @@ textarea {
         font-size: 16px;
     }
 }
-@media all and (max-width:992px) {  
-    
-    // Image box 
+@media all and (max-width:992px) {
+
+    // Image box
     .img-box.horizontal {
         .box-thumb,.box-content{
             width: 100%;
@@ -1655,7 +1682,7 @@ textarea {
             padding-left: 0;
         }
     }
-    
+
     // Content Box
     .content-box p {
         width: 100%;
