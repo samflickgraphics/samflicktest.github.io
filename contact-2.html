@@ -118,11 +118,11 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href="blog.html" class="active"><div>BLOG</div></a></li>
-                                <li><a href="#"><div>CONTACT</div></a>
+                                <li><a href="blog.html"><div>BLOG</div></a></li>
+                                <li><a href="#" class="active"><div>CONTACT</div></a>
                                     <ul>
                                         <li><a href="contact.html"><div>CONTACT</div></a></li>
-                                        <li><a href="contact-2.html"><div>CONTACT (MAP)</div></a></li>
+                                        <li><a href="contact-2.html" class="active"><div>CONTACT (MAP)</div></a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -140,92 +140,54 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12">
-                                <div class="page-title has-description">
-                                    <h1>Blog</h1>
-                                    <p>I share my thoughts and upcomings here.</p>
+                                <div id="map-block">
+                                    <div id="googleMap" data-zoom="10" data-latitude="40.730610" data-longitude="-73.935242"></div>
                                 </div>
                             </div>
                             <div class="col-sm-12">
-                                <div class="post-list horizontal">
-                                    <article class="post clearfix">
-                                        <div class="col-sm-12 col-md-7 no-padding-left post-img-wrap">
-                                            <a href="blog-single.html" class="post-img">
-                                                <img src="images/blog/img_1.png" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-5 no-padding-right post-content-wrap">
-                                            <div class="post-content">
-                                                <div class="post-date">25 Nov 2015</div>
-                                                <h2 class="post-title"><a href="blog-single.html">Wireframing tips for designers</a></h2>
-                                                <ul class="post-meta">
-                                                    <li class="post-author"><a href="">Admin</a></li>
-                                                    <li class="post-category"><a href="">Article</a></li>
-                                                </ul>
-                                                <p class="post-excerpt">It is a long established fact that a reader will be distracted by the readable content of a page when look at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content here  making it look like readable English.</p>
-                                                <div class="post-btn button">
-                                                    <a href="blog-single.html">Read More</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article class="post clearfix">
-                                        <div class="col-sm-12 col-md-7 no-padding-left post-img-wrap">
-                                            <a href="blog-single.html" class="post-img">
-                                                <img src="images/blog/img_2.png" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-5 no-padding-right post-content-wrap">
-                                            <div class="post-content">
-                                                <div class="post-date">02 Nov 2015</div>
-                                                <h2 class="post-title"><a href="blog-single.html">Responsive web design</a></h2>
-                                                <ul class="post-meta">
-                                                    <li class="post-author"><a href="">Admin</a></li>
-                                                    <li class="post-category"><a href="">Design</a></li>
-                                                </ul>
-                                                <p class="post-excerpt">It is a long established fact that a reader will be distracted by the readable content of a page when look at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content here  making it look like readable English.</p>
-                                                <div class="post-btn button">
-                                                    <a href="blog-single.html">Read More</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article class="post clearfix">
-                                        <div class="col-sm-12 col-md-7 no-padding-left post-img-wrap">
-                                            <a href="blog-single.html" class="post-img">
-                                                <img src="images/blog/img_3.png" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-12 col-md-5 no-padding-right post-content-wrap">
-                                            <div class="post-content">
-                                                <div class="post-date">02 Nov 2015</div>
-                                                <h2 class="post-title"><a href="blog-single.html">User Experience fundamentals</a></h2>
-                                                <ul class="post-meta">
-                                                    <li class="post-author"><a href="">Admin</a></li>
-                                                    <li class="post-category"><a href="">Design</a></li>
-                                                </ul>
-                                                <p class="post-excerpt">It is a long established fact that a reader will be distracted by the readable content of a page when look at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content here  making it look like readable English.</p>
-                                                <div class="post-btn button">
-                                                    <a href="blog-single.html">Read More</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
+                                <div class="page-title has-description margin-top-50">
+                                    <h1>Want to get in touch?</h1>
+                                    <p>Write me a message via form, I will reply shortly.</p>
                                 </div>
-                                <ul class="post-nav clearfix">
-                                    <li class="post-prev">
-                                        <a href="#">
-                                            <span>Prev</span>
-                                        </a>
-                                    </li>
-                                    <li class="post-number current"><span>1</span></li>
-                                    <li class="post-number"><span><a href="#">2</a></span></li>
-                                    <li class="post-number"><span><a href="#">3</a></span></li>
-                                    <li class="post-next">
-                                        <a href="#">
-                                            <span>Next</span>
-                                        </a>
-                                    </li>
-                                </ul>
+                            </div>
+                            <div class="col-sm-8 col-md-8">
+                                <form action="include/contact.php" method="post" id="contact-form" class="contact-form">
+                                    <div class="form-process"></div>
+                                    <div class="col-sm-6 no-padding-left form-control-wrap">
+                                        <input id="name" class="form-control" placeholder="Name*" name="name" type="text">
+                                        <span class="name contact-error-msg">Please fill in the required field.</span>
+                                    </div>
+                                    <div class="col-sm-6 no-padding-right form-control-wrap">
+                                        <input id="Email" class="form-control" placeholder="Email*" name="email" type="email" >
+                                        <span class="email contact-error-msg">Please enter a valid email address.</span>
+                                    </div>
+                                    <div class="col-sm-12 no-padding-left no-padding-right form-control-wrap">
+                                        <textarea id="message" class="form-control" placeholder="Your Message*" name="message"  ></textarea>
+                                        <span class="message contact-error-msg">Please fill in the required field.</span>
+                                    </div>
+                                    <div class="form-submit">
+                                        <button name="submit" type="submit" id="submit">Send Message</button>
+                                    </div>
+                                    <br>
+                                    <span class="contact-failed">Message not sent, Please try again.</span>
+                                    <span class="contact-success">Message sent successfully.</span>
+                                </form>
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <div class="contact-info">
+                                    <div>
+                                        <span>Email</span>
+                                        kraft@gmail.com
+                                    </div>
+                                    <div>
+                                        <span>Phone</span>
+                                        022844 998 234
+                                    </div>
+                                    <address>
+                                        <span>Address</span>
+                                        833 Indian Summer Court<br>Carol Stream, IL 60188
+                                    </address>    
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -265,6 +227,7 @@
         <script src="js/superfish.js"></script>
         <script src="js/cubeportfolio.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=yourapikey"></script>
         <script src="js/main.js"></script>
         <!-- Scripts Ends -->
     </body>

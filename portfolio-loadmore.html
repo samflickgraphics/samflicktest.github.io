@@ -36,7 +36,7 @@
                         <span id="menu-trigger"><span></span></span>
                         <nav id="main-menu">
                             <ul>
-                                <li><a href="index.html"><div>HOME</div></a>
+                                <li><a href="index.html" class="active"><div>HOME</div></a>
                                     <ul>
                                         <li><a href="#"><div>MASONRY</div></a>
                                             <ul>
@@ -63,7 +63,7 @@
                                         </li>
                                         <li><a href="#">LOAD MORE ITEMS</a>
                                             <ul>
-                                                <li><a href="portfolio-loadmore.html"><div>ON CLICK</div></a></li>
+                                                <li><a href="portfolio-loadmore.html" class="active"><div>ON CLICK</div></a></li>
                                                 <li><a href="portfolio-loadmore-scroll.html"><div>ON SCROLL</div></a></li>
                                             </ul>
                                         </li>
@@ -118,7 +118,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href="blog.html" class="active"><div>BLOG</div></a></li>
+                                <li><a href="blog.html"><div>BLOG</div></a></li>
                                 <li><a href="#"><div>CONTACT</div></a>
                                     <ul>
                                         <li><a href="contact.html"><div>CONTACT</div></a></li>
@@ -140,92 +140,104 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12">
-                                <div class="page-title has-description">
-                                    <h1>Blog</h1>
-                                    <p>I share my thoughts and upcomings here.</p>
+                                <div class="page-title">
+                                    <h1 class="heading">I provide <b>Design Solutions.</b><br>My work is presented here, check them below.</h1>
                                 </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="post-list horizontal">
-                                    <article class="post clearfix">
-                                        <div class="col-sm-12 col-md-7 no-padding-left post-img-wrap">
-                                            <a href="blog-single.html" class="post-img">
-                                                <img src="images/blog/img_1.png" alt="">
+                                <!-- Portfolio Wrap -->
+                                <div class="portfolio-wrap">
+                                    <!-- Portfolio Filter -->
+                                    <div id="filters-container" class="cbp-l-filters-text text-left">
+                                        <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
+                                            All 
+                                        </div>
+                                        <div data-filter=".web-design" class="cbp-filter-item">
+                                            Web Design
+                                        </div>
+                                        <div data-filter=".branding" class="cbp-filter-item">
+                                            Branding
+                                        </div>
+                                        <div data-filter=".graphic" class="cbp-filter-item">
+                                            Graphic
+                                        </div>
+                                    </div>
+                                    <!-- Portfolio Filter -->
+                                    
+                                    <!-- Portfolio Items -->
+                                    <div id="portfolio-container" class="cbp" data-layoutmode="grid" data-gaphorizontal="30" data-gapvertical="30" data-captionanimation="zoom" data-animationtype="quicksand" data-large-desktop="2" data-medium-desktop="2" data-tablet="2" data-loadmoreaction="click">
+                                        <div class="cbp-item web-design">
+                                            <a href="details-right-image.html" class="cbp-caption">
+                                                <div class="cbp-caption-defaultWrap">
+                                                    <img src="images/portfolio/thumbnails-grid/img_1.png" alt="">
+                                                </div>
+                                                <div class="cbp-caption-activeWrap">
+                                                    <div class="cbp-l-caption-alignLeft">
+                                                        <div class="cbp-l-caption-body">
+                                                            <div class="cbp-l-caption-title">Label Tag</div>
+                                                            <div class="cbp-l-caption-desc">Branding</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-12 col-md-5 no-padding-right post-content-wrap">
-                                            <div class="post-content">
-                                                <div class="post-date">25 Nov 2015</div>
-                                                <h2 class="post-title"><a href="blog-single.html">Wireframing tips for designers</a></h2>
-                                                <ul class="post-meta">
-                                                    <li class="post-author"><a href="">Admin</a></li>
-                                                    <li class="post-category"><a href="">Article</a></li>
-                                                </ul>
-                                                <p class="post-excerpt">It is a long established fact that a reader will be distracted by the readable content of a page when look at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content here  making it look like readable English.</p>
-                                                <div class="post-btn button">
-                                                    <a href="blog-single.html">Read More</a>
+                                        <div class="cbp-item branding">
+                                            <a href="details-right-gallery.html" class="cbp-caption">
+                                                <div class="cbp-caption-defaultWrap">
+                                                    <img src="images/portfolio/thumbnails-grid/img_2.png" alt="">
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article class="post clearfix">
-                                        <div class="col-sm-12 col-md-7 no-padding-left post-img-wrap">
-                                            <a href="blog-single.html" class="post-img">
-                                                <img src="images/blog/img_2.png" alt="">
+                                                <div class="cbp-caption-activeWrap">
+                                                    <div class="cbp-l-caption-alignLeft">
+                                                        <div class="cbp-l-caption-body">
+                                                            <div class="cbp-l-caption-title">Magazine</div>
+                                                            <div class="cbp-l-caption-desc">Identity</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-12 col-md-5 no-padding-right post-content-wrap">
-                                            <div class="post-content">
-                                                <div class="post-date">02 Nov 2015</div>
-                                                <h2 class="post-title"><a href="blog-single.html">Responsive web design</a></h2>
-                                                <ul class="post-meta">
-                                                    <li class="post-author"><a href="">Admin</a></li>
-                                                    <li class="post-category"><a href="">Design</a></li>
-                                                </ul>
-                                                <p class="post-excerpt">It is a long established fact that a reader will be distracted by the readable content of a page when look at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content here  making it look like readable English.</p>
-                                                <div class="post-btn button">
-                                                    <a href="blog-single.html">Read More</a>
+                                        <div class="cbp-item web-design">
+                                            <a href="details-right-slider.html" class="cbp-caption">
+                                                <div class="cbp-caption-defaultWrap">
+                                                    <img src="images/portfolio/thumbnails-grid/img_3.png" alt="">
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article class="post clearfix">
-                                        <div class="col-sm-12 col-md-7 no-padding-left post-img-wrap">
-                                            <a href="blog-single.html" class="post-img">
-                                                <img src="images/blog/img_3.png" alt="">
+                                                <div class="cbp-caption-activeWrap">
+                                                    <div class="cbp-l-caption-alignLeft">
+                                                        <div class="cbp-l-caption-body">
+                                                            <div class="cbp-l-caption-title">Cardboard</div>
+                                                            <div class="cbp-l-caption-desc">Mockup</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </a>
                                         </div>
-                                        <div class="col-sm-12 col-md-5 no-padding-right post-content-wrap">
-                                            <div class="post-content">
-                                                <div class="post-date">02 Nov 2015</div>
-                                                <h2 class="post-title"><a href="blog-single.html">User Experience fundamentals</a></h2>
-                                                <ul class="post-meta">
-                                                    <li class="post-author"><a href="">Admin</a></li>
-                                                    <li class="post-category"><a href="">Design</a></li>
-                                                </ul>
-                                                <p class="post-excerpt">It is a long established fact that a reader will be distracted by the readable content of a page when look at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content here  making it look like readable English.</p>
-                                                <div class="post-btn button">
-                                                    <a href="blog-single.html">Read More</a>
+                                        <div class="cbp-item graphic">
+                                            <a href="details-bottom-gallery.html" class="cbp-caption">
+                                                <div class="cbp-caption-defaultWrap">
+                                                    <img src="images/portfolio/thumbnails-grid/img_4.png" alt="">
                                                 </div>
-                                            </div>
+                                                <div class="cbp-caption-activeWrap">
+                                                    <div class="cbp-l-caption-alignLeft">
+                                                        <div class="cbp-l-caption-body">
+                                                            <div class="cbp-l-caption-title">Stationary</div>
+                                                            <div class="cbp-l-caption-desc">Identity</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
                                         </div>
-                                    </article>
+                                    </div>
+                                    <!-- Portfolio Items -->
+                                    
+                                    <!-- Portfolio Load More -->
+                                    <div id="more-projects" class="button text-center load-more">
+                                        <a href="ajax-projects/loadMore.html" class="cbp-l-loadMore-link" rel="nofollow">
+                                            <span class="cbp-l-loadMore-defaultText">LOAD MORE</span>
+                                            <span class="cbp-l-loadMore-loadingText">LOADING...</span>
+                                            <span class="cbp-l-loadMore-noMoreLoading">NO MORE WORKS</span>
+                                        </a>
+                                    </div>
+                                    <!-- Portfolio Load More Ends -->
                                 </div>
-                                <ul class="post-nav clearfix">
-                                    <li class="post-prev">
-                                        <a href="#">
-                                            <span>Prev</span>
-                                        </a>
-                                    </li>
-                                    <li class="post-number current"><span>1</span></li>
-                                    <li class="post-number"><span><a href="#">2</a></span></li>
-                                    <li class="post-number"><span><a href="#">3</a></span></li>
-                                    <li class="post-next">
-                                        <a href="#">
-                                            <span>Next</span>
-                                        </a>
-                                    </li>
-                                </ul>
+                                <!-- Portfolio Wrap Ends -->
                             </div>
                         </div>
                     </div>
