@@ -1,11 +1,12 @@
 ---
+layout: post
 title: Going Back to University
-link: posts/2017/8-12
-image-thumb: /images/blog/8-12.png
-image-single: /images/blog/single/8-12.png
+image:
+  feature: /images/blog/single/8-12.png
+  thumb: /images/blog/thumb/8-12-thumb.png
 alt: Going Back to University
 author: Admin
-category: Personal
+class: Personal
 ---
 
 Tomorrow is my last day of summer vacation. It has been a stressful, quiet, but eventful summer with lots of highs and lows throughout. It has been eventful at times, it has been quiet at times, and it has been stressful most of the time.

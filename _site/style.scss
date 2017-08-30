@@ -56,6 +56,9 @@ a {
 img {
     max-width:100%;
 }
+video {
+		max-width:100%;
+}
 h1,h2,h3,h4,h5,h6 {
     color: $primary-color;
     margin-top:0;
@@ -89,6 +92,11 @@ h1,h2,h3,h4,h5,h6 {
 
 .color{
   color: $accent-color;
+}
+
+.center{
+	text-align: center;
+	margin: 0 auto;
 }
 
 /*-----------------------------------------------------------
@@ -130,7 +138,7 @@ h6 {
     font-size: 16px;
 }
 p{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 24px;
     letter-spacing: 1px;
@@ -156,6 +164,9 @@ blockquote {
     border-left-width: 3px;
     padding:20px 30px;
     background: #f8f8f8
+}
+.bold{
+		font-weight: 700;
 }
 /*-----------------------------------------------------------
     Helper Classes
@@ -735,6 +746,10 @@ blockquote {
 /*-----------------------------------------------------------
     Portfolio
 -------------------------------------------------------------*/
+.portfolio-container{
+		max-height: 100%;
+}
+
 .portfolio-wrap {
     // Filters
     .cbp-l-filters-text{

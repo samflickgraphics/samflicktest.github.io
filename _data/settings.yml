@@ -1,0 +1,37 @@
+#-------------------------------
+# About Section
+
+experience:
+- { title: College Heights Herald, description: I created print layouts and web layouts for the College Heights Herald. }
+- { title: WKU Talisman Magazine, description: I designed and created book layouts for the WKU Talisman. }
+- { title: Imagewest, description: I interned at a student-run ad agency making print and web campaigns for a variety of clients. }
+- { title: Chris Kaufman Studio, description: I did some freelance stationery design for Chris Kaufman who's a director of Heyman Talent Modeling Agency. }
+- { title: Olive Flick, description: I did some freelance stationery design for my sister who is a fashion model in New York. }
+- { title: Design Asylum, description: I did a logo and brand identity for the school organization Design Asylum. }
+
+exhibitions:
+- { title: Kaviar Art Exhibition, date: Aug. 25th, 2017 - Oct. 7th, 2017 }
+- { title: WKU Juror Selected Invtl. Student Art Exhibit, date: Aug. 31st, 2016 }
+- { title: Scholastic Art Show 2016, date: Mar. 14th, 2016 }
+- { title: NAFCS Secondary Art Show, date: Apr. 30th, 2016 }
+
+clients:
+- { title: College heights Herald }
+- { title: WKU Talisman Magazine }
+- { title: Leitchfield Future Leaders }
+- { title: WKU Human Resources }
+- { title: Chris Kaufman Studio }
+- { title: Olive Flick }
+- { title: Design Asylum }
+
+#-------------------------------
+# Services Section
+
+services-headline:
+- { headline: Here is what I offer. }
+
+skills:
+- { title: Layout Design/Editoral, description: I create layouts for magazines and newspapers for various publications as well as create identities that works for any client., image: /images/service/layout.jpg, alt: Services, link: /portfolio/Talisman_V2 }
+- { title: Branding, description: I construct ideas as well as help clients reach the ideas they desire through branding and marketing campaigns on both print media and digital media., image: /images/service/branding.jpg, alt: Services, link: /portfolio/Olive_Flick }
+- { title: Compositing/Digital Painting, description: I create digital art and composites for use in exhibitions and in my design work., image: /images/service/compositing.jpg, alt: Services, link: /portfolio/City-Within-the-Trees }
+- { title: UI/UX, description: I code websites through by scratch using HTML and CSS as well as use Wordpress and Jekyll to develop the user experiences of a website. I also do visual design for projects that I work on through programs like Adobe XD., image: /images/service/uiux.jpg, alt: Services, link: /portfolio/Kafe }

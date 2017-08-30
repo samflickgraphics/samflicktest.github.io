@@ -1,5 +1,27 @@
 ---
-layout: default
+layout: blog-posts
 ---
 
-{% include blog-posts.html %}
+{% for post in site.posts limit:18 %}
+  <article class="post clearfix">
+      <div class="col-sm-12 col-md-7 no-padding-left post-img-wrap">
+          <a href="{{ site.url }}{{ post.url }}" class="post-img">
+              <img src="{{ post.image.thumb }}" alt="{{ post.alt }}">
+          </a>
+      </div>
+      <div class="col-sm-12 col-md-5 no-padding-right post-content-wrap">
+          <div class="post-content">
+              <div class="post-date">{{ post.date | date: '%B %d, %Y' }}</div>
+              <h2 class="post-title"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+              <ul class="post-meta">
+                  <li class="post-author"><a href="/about">{{ post.author }}</a></li>
+                  <li class="post-category"><a href="/blog">{{ post.class }}</a></li>
+              </ul>
+              <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords:75 }}</p>
+              <div class="post-btn button">
+                  <a href="{{ site.url }}{{ post.url }}">Read More</a>
+              </div>
+          </div>
+      </div>
+  </article>
+{% endfor %}

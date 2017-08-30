@@ -11,4 +11,4 @@ sass:
 
 collections:
   portfolio:
-  posts:
+      output: true

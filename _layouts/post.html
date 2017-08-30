@@ -11,20 +11,24 @@ layout: default
                             <div class="col-sm-12">
 
                               <div class="post-single-wrap default clearfix">
-                                  {% for post in site.posts limit:1 %}
+
                                     <article class="post clearfix">
-                                        <h1 class="post-title">{{ post.title }}</h1>
+                                      {% if page.link %}
+                                        <h1 class="post-title"><a href="{{ page.link }}">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %} <span class="link-arrow">&rarr;</span></a></h1>
+                                      {% else %}
+                                        <h1 class="post-title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
+                                      {% endif %}
                                         <ul class="post-meta">
-                                            <li class="post-date">{{ post.date | date: '%B %d, %Y' }}</li>
-                                            <li class="post-author"><a href="/about.html">{{ post.author }}</a></li>
-                                            <li class="post-category"><a href="">{{ post.category }}</a></li>
+                                            <li class="post-date">{{ page.date | date: '%B %d, %Y' }}</li>
+                                            <li class="post-author"><a href="/about">{{ page.author }}</a></li>
+                                            <li class="post-category"><a href="/blog">{{ page.class }}</a></li>
                                         </ul>
                                         <div class="post-img">
-                                            <img src="{{ post.image-single }}" alt="{{ post.alt }}">
+                                            <img src="{{ page.image.feature }}" alt="{{ page.alt }}">
                                         </div>
                                         <div class="post-content-wrap clearfix col-md-9">
                                             <div class="no-padding-left">
-                                                <p>{{ post.content }}</p>
+                                                <p>{{ page.content }}</p>
                                             </div>
                                         </div>
                                         <div class="col-md-3 post-content-wrap no-padding-right">
@@ -38,19 +42,23 @@ layout: default
                                             </div>
                                         </div>
                                     </article>
-                                  {% endfor %}
+
                               </div>
                               <ul class="post-nav clearfix">
+                                {% if page.previous %}
                                   <li class="post-prev">
-                                      <a href="#">
-                                          <span>Prev</span>
-                                      </a>
+                                    <a href="{{ site.url }}{{ page.previous.url }}">
+                                      <span>Prev</span>
+                                    </a>
                                   </li>
+                                {% endif %}
+                                {% if page.next %}
                                   <li class="post-next">
-                                      <a href="#">
-                                          <span>Next</span>
+                                      <a href="{{ site.url }}{{ page.next.url }}">
+                                        <span>Next</span>
                                       </a>
                                   </li>
+                                {% endif %}
                               </ul>
 
                             </div>

@@ -1,0 +1,25 @@
+  <div class="col-sm-12 margin-bottom-10">
+      <h4>Experience</h4>
+  </div>
+{% for experience in site.data.settings.experience %}
+  <div class="col-sm-6 margin-bottom-10">
+      <div class="desc-list">
+          <h6>{{ experience.title }}</h6>
+          <p>{{ experience.description }}</p>
+      </div>
+  </div>
+{% endfor %}
+<div class="col-sm-12">
+    <hr class="sep-line">
+</div>
+<div class="col-sm-12 margin-bottom-10">
+    <h4>Exhibitions</h4>
+</div>
+{% for exhibitions in site.data.settings.exhibitions %}
+  <div class="col-sm-6 margin-bottom-10">
+      <div class="desc-list">
+          <h6>{{ exhibitions.title }}</h6>
+          <p>{{ exhibitions.date }}</p>
+      </div>
+  </div>
+{% endfor %}

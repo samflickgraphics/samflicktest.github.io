@@ -1,5 +1,25 @@
 ---
-layout: default
+layout: portfolio
 ---
 
-{% include portfolio.html %}
+<!-- Portfolio Items -->
+<div id="portfolio-container" class="cbp" data-layoutmode="grid" data-gaphorizontal="30" data-gapvertical="30" data-captionanimation="zoom" data-animationtype="quicksand" data-large-desktop="2" data-medium-desktop="2" data-tablet="2">
+  {% for portfolio_item in site.portfolio %}
+    <div class="cbp-item {{ portfolio_item.category }}">
+        <a href="/portfolio/{{ portfolio_item.link }}" class="cbp-caption">
+            <div class="cbp-caption-defaultWrap">
+                <img src="{{ portfolio_item.image }}" alt="{{ portfolio_item.alt }}" srcset="{{ portfolio_item.retina }}">
+            </div>
+            <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignLeft">
+                    <div class="cbp-l-caption-body">
+                        <div class="cbp-l-caption-title">{{ portfolio_item.title }}</div>
+                        <div class="cbp-l-caption-desc">{{ portfolio_item.subtitle }}</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+  {% endfor %}
+</div>
+<!-- Portfolio Items -->
