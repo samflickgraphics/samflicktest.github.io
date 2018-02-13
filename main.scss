@@ -1,0 +1,272 @@
+/*----------------------------------------------------------- Variables*/
+$primary-color: #0033a1;
+$secondary-color: #3284bf;
+$accent-color: #ffdc00;
+
+/*----------------------------------------------------------- General*/
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "utopia-std",serif;
+  color: $primary-color;
+}
+
+img{
+  width: 100%;
+}
+
+video{
+  width: 100%;
+}
+
+section{
+  padding: 64px 0;
+}
+
+/*----------------------------------------------------------- Typography*/
+h1,h2,h3,h4,h5,h6,p,span,ul,ol,li,a,blockquote{
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "franklin-gothic-urw-cond", sans-serif;
+}
+
+h1{
+  font-size: 96px;
+  line-height: 1;
+}
+
+h2{
+  font-size: 36px;
+}
+
+h3{
+  font-size: 24px;
+}
+
+h4{
+  font-size: 20px;
+}
+
+h5{
+  font-size: 18px;
+}
+
+h6{
+  font-size: 16px;
+}
+p{
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a{
+  color: $primary-color;
+  text-decoration: none;
+}
+
+blockquote{
+  font-size: 24px;
+  font-weight: 500;
+  border-left: 4px solid $accent-color;
+  padding: 20px;
+}
+
+.center{
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*----------------------------------------------------------- Graphics*/
+.button {
+    a {
+        font-size: 14px;
+        color:$accent-color;
+        border: 2px solid $accent-color;
+        padding: 8px 16px;
+        display: inline-block;
+        transition: all .4s ease;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: none;
+            background: $accent-color;
+            color: white;
+        }
+    }
+    &.solid{
+        a {
+            background: $accent-color;
+            color: white;
+            &:hover{
+                background: darken($accent-color, 10%);
+            }
+        }
+    }
+}
+
+.bar{
+  border: 2px solid $accent-color;
+  width: 48px;
+  margin: 3rem 0;
+}
+
+.bar-white{
+  border: 2px solid white;
+  width: 48px;
+  margin: 3rem 0;
+}
+
+hr{
+  width: 80%;
+}
+
+/*----------------------------------------------------------- Hero*/
+.hero{
+  height: 95vh;
+  background-image: url(/images/hero.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding-top: 15vh;
+  color: white;
+  h2{
+    font-weight: 400;
+    padding-top: 16px;
+    font-size: 20px;
+    font-family: "utopia-std",serif;
+  }
+  a{
+    color: white;
+    transition: 0.4s all ease-in-out;
+    &:hover{
+      background: white;
+      color: $secondary-color;
+    }
+  }
+}
+
+.hero-content{
+  padding-bottom: 64px;
+}
+
+.hero-credits{
+  padding-top: 64px;
+}
+
+@media screen and (max-width: 1024px){
+    h1{
+      font-size: 72px;
+    }
+}
+@media screen and (max-width: 768px){
+  .hero{
+    padding-top: 2.5vh;
+  }
+  .hero-credits{
+    padding-top: 32px;
+  }
+}
+@media screen and (max-width: 426px){
+  .hero{
+    padding-top: 2vh;
+    h2{
+      font-size: 16px;
+    }
+    h4{
+      font-size: 14px;
+    }
+    p,a{
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (max-width: 425px){
+  .hero{
+    padding-top: 0;
+  }
+}
+
+/*----------------------------------------------------------- Introduction*/
+.introduction{
+  background-image: url(/images/img1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h2{
+    text-align: center;
+  }
+}
+
+/*----------------------------------------------------------- Image*/
+section.image{
+  padding-top: 0;
+  position: relative;
+}
+
+.float{
+  position: absolute;
+  width: 50%;
+  box-shadow: 10px 10px 35px -15px rgba(0,0,0,0.8);
+}
+
+.float-1{
+  top: -50px;
+  left: 40px;
+  z-index: 1;
+}
+
+.float-2{
+  bottom: 50px;
+  right: 40px;
+  z-index: 2;
+}
+
+.phone{
+  position: absolute;
+  width: 50%;
+  max-width: 500px;
+  bottom: 0px;
+  left: 60px;
+  z-index: 3;
+}
+
+@media screen and (max-width: 1024px){
+  .phone{
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 768px){
+  .phone{
+    max-width: 250px;
+  }
+}
+@media screen and (max-width: 425px){
+  .phone{
+    max-width: 150px;
+    left: 30px;
+  }
+}
+@media screen and (max-width: 320px){
+  .phone{
+    max-width: 100px;
+  }
+}
+
+/*----------------------------------------------------------- Section2*/
+.text2{
+  background-image: url(/images/img6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: white;
+  height: 80vh;
+}
+
+.legal{
+  font-size: 8px;
+  padding-top: 16px;
+}
